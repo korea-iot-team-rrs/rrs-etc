@@ -164,8 +164,3 @@ CREATE TABLE `ANNOUNCEMENT_LIST` (
    `ANNOUNCEMENT_CONTENT` VARCHAR(255) NOT NULL COMMENT '공지사항내용',
    `ANNOUNCEMENT_CREATE_AT` DATETIME NOT NULL COMMENT '생성시간'
 );
-
-
-SELECT p 
-FROM Providers p 
-WHERE FIND_IN_SET(:option, p.providerProvisionOption) > 0 AND p.providerProvisionYN = '1'";
